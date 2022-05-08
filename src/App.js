@@ -3,16 +3,16 @@ import { useEffect } from 'react'
 
 const App = () => {
   const [name, setname] = useState('')
-  const [result, setresult] = useState(true)
+  const [result, setResult] = useState(true)
 
   const nameCheck = (name) => {
-    const nameRegex = /^[a-zA-Z '-]{2,40}$/
+    const nameRegex = /^[a-zA-Z'*]{2,40}$/
     if (nameRegex.test(name)) {
-      setresult(true)
-    } else if (name.includes('--') || name.includes(' .* ')) {
-      setresult(false)
+      setResult(true)
+    } else if (name.includes('--') || name.includes(`.*`)) {
+      setResult(false)
     } else {
-      setresult(false)
+      setResult(false)
     }
   }
 
@@ -25,6 +25,7 @@ const App = () => {
       <h1> Agile HomeWork 4</h1>
       <h3>Ayoub Maimmadi</h3>
       <h3>Rabii Alaui</h3>
+
       <input
         style={{
           margin: '10px',
@@ -38,6 +39,7 @@ const App = () => {
         onChange={(e) => setname(e.target.value)}
         placeholder="Enter your name"
       />
+
       <h1
         style={{
           color: 'blue',
