@@ -6,11 +6,11 @@ const App = () => {
   const [result, setResult] = useState(true)
 
   const nameCheck = (name) => {
-    const nameRegex = /^[a-zA-Z'*]{2,40}$/
+    const nameRegex = /^[a-zA-Z]{2,40}$/
     if (nameRegex.test(name)) {
       setResult(true)
-    } else if (name.includes('--') || name.includes(`.*`)) {
-      setResult(false)
+    } else if (name.includes(`'`) || name.includes('-')) {
+      setResult(true)
     } else {
       setResult(false)
     }
