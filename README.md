@@ -1,3 +1,3 @@
-# Simple React Name Checker
+# Basic Name Checker
 
 ### View --> https://basic-name-checker.netlify.app
