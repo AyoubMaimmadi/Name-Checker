@@ -24,7 +24,6 @@ const App = () => {
     <div style={{ margin: '50px' }}>
       <h1> Agile HomeWork 4</h1>
       <h3>Ayoub Maimmadi</h3>
-      <h3>Rabii Alaui</h3>
 
       <input
         style={{
